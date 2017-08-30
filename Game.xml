@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="37" version="2.1" version_name="Godot Engine v2.1.3.stable.official">
+<resource_file type="PackedScene" subresource_count="38" version="2.1" version_name="Godot Engine v2.1.3.stable.official">
+	<ext_resource path="res://Flower.xml" type="PackedScene" index="1"></ext_resource>
 	<ext_resource path="res://green_hill_zone.png" type="Texture" index="0"></ext_resource>
-	<ext_resource path="res://sonic.png" type="Texture" index="2"></ext_resource>
-	<ext_resource path="res://sonic.gd" type="Script" index="1"></ext_resource>
+	<ext_resource path="res://sonic.png" type="Texture" index="3"></ext_resource>
+	<ext_resource path="res://sonic.gd" type="Script" index="2"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://20">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="4"> 			-4860.63, 389.881, -4860.35, 325.922, -4847.74, 323.333, -4796.94, 332.392 </vector2_array>
@@ -300,10 +301,12 @@
 			<array  len="0" shared="false">
 			</array>
 			<string> "names" </string>
-			<string_array  len="152">
+			<string_array  len="194">
 				<string> "Game" </string>
 				<string> "Node2D" </string>
 				<string> "Green Hill Zone - Stg1" </string>
+				<string> "editor/display_folded" </string>
+				<string> "z/z" </string>
 				<string> "input/pickable" </string>
 				<string> "shapes/0/shape" </string>
 				<string> "shapes/0/transform" </string>
@@ -400,6 +403,47 @@
 				<string> "shape_range" </string>
 				<string> "trigger" </string>
 				<string> "CollisionPolygon2D 2" </string>
+				<string> "Flowers" </string>
+				<string> "Node" </string>
+				<string> "Flower" </string>
+				<string> "Flower1" </string>
+				<string> "Flower2" </string>
+				<string> "Flower3" </string>
+				<string> "Flower4" </string>
+				<string> "Flower5" </string>
+				<string> "Flower6" </string>
+				<string> "Flower7" </string>
+				<string> "Flower8" </string>
+				<string> "Flower9" </string>
+				<string> "Flower10" </string>
+				<string> "Flower11" </string>
+				<string> "Flower12" </string>
+				<string> "Flower13" </string>
+				<string> "Flower14" </string>
+				<string> "Flower15" </string>
+				<string> "Flower16" </string>
+				<string> "Flower17" </string>
+				<string> "Flower18" </string>
+				<string> "Flower19" </string>
+				<string> "Flower20" </string>
+				<string> "Flower21" </string>
+				<string> "Flower22" </string>
+				<string> "Flower23" </string>
+				<string> "Flower24" </string>
+				<string> "Flower25" </string>
+				<string> "Flower26" </string>
+				<string> "Flower27" </string>
+				<string> "Flower28" </string>
+				<string> "Flower29" </string>
+				<string> "Flower30" </string>
+				<string> "Flower31" </string>
+				<string> "Flower32" </string>
+				<string> "Flower33" </string>
+				<string> "Flower34" </string>
+				<string> "Flower35" </string>
+				<string> "Flower36" </string>
+				<string> "Flower37" </string>
+				<string> "Flower38" </string>
 				<string> "Sonic" </string>
 				<string> "collision/margin" </string>
 				<string> "script/script" </string>
@@ -407,7 +451,6 @@
 				<string> "sonicSprite" </string>
 				<string> "vframes" </string>
 				<string> "hframes" </string>
-				<string> "frame" </string>
 				<string> "sonicColShape" </string>
 				<string> "shape" </string>
 				<string> "_update_shape_index" </string>
@@ -455,14 +498,16 @@
 				<string> "sonicRaycast2" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 13 </int>
+			<int> 54 </int>
 			<string> "node_paths" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="407"> 				-1, -1, 1, 0, -1, 0, 0, 0, 0, 88, 2, -1, 85, 3, 0, 4, 1, 5, 2, 6, 0, 7, 3, 8, 2, 9, 0, 10, 4, 11, 2, 12, 0, 13, 5, 14, 2, 15, 0, 16, 6, 17, 2, 18, 0, 19, 7, 20, 2, 21, 0, 22, 8, 23, 2, 24, 0, 25, 9, 26, 2, 27, 0, 28, 10, 29, 11, 30, 0, 31, 12, 32, 11, 33, 0, 34, 13, 35, 11, 36, 0, 37, 14, 38, 11, 39, 0, 40, 15, 41, 11, 42, 0, 43, 16, 44, 11, 45, 0, 46, 17, 47, 11, 48, 0, 49, 18, 50, 11, 51, 0, 52, 19, 53, 11, 54, 0, 55, 20, 56, 11, 57, 0, 58, 21, 59, 11, 60, 0, 61, 22, 62, 11, 63, 0, 64, 23, 65, 11, 66, 0, 67, 24, 68, 11, 69, 0, 70, 25, 71, 11, 72, 0, 73, 26, 74, 11, 75, 0, 76, 27, 77, 11, 78, 0, 79, 28, 80, 11, 81, 0, 82, 29, 83, 29, 84, 30, 85, 31, 86, 32, 87, 31, 0, 1, 0, 92, 89, -1, 2, 90, 33, 91, 34, 0, 1, 0, 93, 93, -1, 5, 90, 35, 94, 36, 95, 37, 96, 38, 97, 0, 0, 1, 0, 93, 98, -1, 4, 94, 36, 95, 39, 96, 40, 97, 0, 0, 0, 0, 102, 99, -1, 9, 90, 41, 3, 0, 4, 42, 5, 11, 6, 0, 82, 29, 83, 29, 100, 43, 101, 44, 0, 5, 0, 92, 103, -1, 4, 91, 45, 104, 46, 105, 47, 106, 47, 0, 5, 0, 110, 107, -1, 3, 108, 42, 97, 0, 109, 36, 0, 5, 0, 125, 111, -1, 13, 112, 29, 113, 31, 114, 48, 115, 49, 116, 50, 117, 51, 118, 52, 119, 53, 120, 54, 121, 55, 122, 32, 123, 56, 124, 57, 0, 5, 0, 126, 126, -1, 16, 127, 29, 128, 0, 129, 55, 130, 58, 131, 59, 132, 59, 133, 60, 134, 60, 135, 55, 136, 55, 137, 0, 138, 61, 139, 62, 140, 63, 141, 62, 142, 62, 0, 5, 0, 148, 143, -1, 5, 90, 64, 144, 55, 145, 65, 146, 29, 147, 66, 0, 5, 0, 148, 149, -1, 6, 90, 67, 150, 68, 144, 55, 145, 65, 146, 29, 147, 66, 0, 5, 0, 148, 151, -1, 6, 90, 69, 150, 70, 144, 55, 145, 65, 146, 29, 147, 66, 0 </int_array>
+			<int_array  len="780"> 				-1, -1, 1, 0, -1, 0, 0, 0, 0, 90, 2, -1, 87, 3, 0, 4, 1, 5, 2, 6, 3, 7, 4, 8, 2, 9, 5, 10, 4, 11, 2, 12, 6, 13, 4, 14, 2, 15, 7, 16, 4, 17, 2, 18, 8, 19, 4, 20, 2, 21, 9, 22, 4, 23, 2, 24, 10, 25, 4, 26, 2, 27, 11, 28, 4, 29, 2, 30, 12, 31, 13, 32, 2, 33, 14, 34, 13, 35, 2, 36, 15, 37, 13, 38, 2, 39, 16, 40, 13, 41, 2, 42, 17, 43, 13, 44, 2, 45, 18, 46, 13, 47, 2, 48, 19, 49, 13, 50, 2, 51, 20, 52, 13, 53, 2, 54, 21, 55, 13, 56, 2, 57, 22, 58, 13, 59, 2, 60, 23, 61, 13, 62, 2, 63, 24, 64, 13, 65, 2, 66, 25, 67, 13, 68, 2, 69, 26, 70, 13, 71, 2, 72, 27, 73, 13, 74, 2, 75, 28, 76, 13, 77, 2, 78, 29, 79, 13, 80, 2, 81, 30, 82, 13, 83, 2, 84, 1, 85, 1, 86, 31, 87, 32, 88, 33, 89, 32, 0, 1, 0, 94, 91, -1, 2, 92, 34, 93, 35, 0, 1, 0, 95, 95, -1, 5, 92, 36, 96, 37, 97, 38, 98, 39, 99, 2, 0, 1, 0, 95, 100, -1, 4, 96, 37, 97, 40, 98, 41, 99, 2, 0, 0, 0, 102, 101, -1, 1, 3, 0, 0, 5, 0, 102, 103, -1, 0, 0, 6, 0, 2147483647, 103, 42, 1, 92, 43, 0, 6, 0, 2147483647, 104, 42, 1, 92, 44, 0, 6, 0, 2147483647, 105, 42, 1, 92, 45, 0, 6, 0, 2147483647, 106, 42, 1, 92, 46, 0, 6, 0, 2147483647, 107, 42, 1, 92, 47, 0, 6, 0, 2147483647, 108, 42, 1, 92, 48, 0, 6, 0, 2147483647, 109, 42, 1, 92, 49, 0, 6, 0, 2147483647, 110, 42, 1, 92, 50, 0, 6, 0, 2147483647, 111, 42, 1, 92, 51, 0, 6, 0, 2147483647, 112, 42, 1, 92, 52, 0, 6, 0, 2147483647, 113, 42, 1, 92, 53, 0, 6, 0, 2147483647, 114, 42, 1, 92, 54, 0, 6, 0, 2147483647, 115, 42, 1, 92, 55, 0, 6, 0, 2147483647, 116, 42, 1, 92, 56, 0, 6, 0, 2147483647, 117, 42, 1, 92, 57, 0, 6, 0, 2147483647, 118, 42, 1, 92, 58, 0, 6, 0, 2147483647, 119, 42, 1, 92, 59, 0, 6, 0, 2147483647, 120, 42, 1, 92, 60, 0, 6, 0, 2147483647, 121, 42, 1, 92, 61, 0, 6, 0, 2147483647, 122, 42, 1, 92, 62, 0, 6, 0, 2147483647, 123, 42, 1, 92, 63, 0, 6, 0, 2147483647, 124, 42, 1, 92, 64, 0, 6, 0, 2147483647, 125, 42, 1, 92, 65, 0, 6, 0, 2147483647, 126, 42, 1, 92, 66, 0, 6, 0, 2147483647, 127, 42, 1, 92, 67, 0, 6, 0, 2147483647, 128, 42, 1, 92, 68, 0, 6, 0, 2147483647, 129, 42, 1, 92, 69, 0, 6, 0, 2147483647, 130, 42, 1, 92, 70, 0, 6, 0, 2147483647, 131, 42, 1, 92, 71, 0, 6, 0, 2147483647, 132, 42, 1, 92, 72, 0, 6, 0, 2147483647, 133, 42, 1, 92, 73, 0, 6, 0, 2147483647, 134, 42, 1, 92, 74, 0, 6, 0, 2147483647, 135, 42, 1, 92, 75, 0, 6, 0, 2147483647, 136, 42, 1, 92, 76, 0, 6, 0, 2147483647, 137, 42, 1, 92, 77, 0, 6, 0, 2147483647, 138, 42, 1, 92, 78, 0, 6, 0, 2147483647, 139, 42, 1, 92, 79, 0, 6, 0, 2147483647, 140, 42, 1, 92, 80, 0, 6, 0, 2147483647, 141, 42, 1, 92, 81, 0, 0, 0, 145, 142, -1, 11, 3, 0, 92, 82, 4, 83, 5, 2, 6, 84, 7, 13, 8, 2, 84, 1, 85, 1, 143, 85, 144, 86, 0, 46, 0, 94, 146, -1, 3, 93, 87, 147, 88, 148, 89, 0, 46, 0, 152, 149, -1, 3, 150, 84, 99, 2, 151, 37, 0, 46, 0, 167, 153, -1, 13, 154, 1, 155, 32, 156, 90, 157, 91, 158, 92, 159, 93, 160, 94, 161, 95, 162, 96, 163, 0, 164, 33, 165, 97, 166, 98, 0, 46, 0, 168, 168, -1, 16, 169, 1, 170, 2, 171, 0, 172, 99, 173, 100, 174, 100, 175, 101, 176, 101, 177, 0, 178, 0, 179, 2, 180, 102, 181, 103, 182, 104, 183, 103, 184, 103, 0, 46, 0, 190, 185, -1, 5, 92, 105, 186, 0, 187, 106, 188, 1, 189, 107, 0, 46, 0, 190, 191, -1, 6, 92, 108, 192, 109, 186, 0, 187, 106, 188, 1, 189, 107, 0, 46, 0, 190, 193, -1, 6, 92, 110, 192, 111, 186, 0, 187, 106, 188, 1, 189, 107, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="71" shared="false">
+			<array  len="112" shared="false">
+				<bool> True </bool>
+				<int> 1 </int>
 				<bool> False </bool>
 				<resource  resource_type="Shape2D" path="local://20">  </resource>
 				<matrix32> 1, -0, 0, 1, 4850.85, -84.8643 </matrix32>
@@ -492,7 +537,6 @@
 				<resource  resource_type="Shape2D" path="local://43">  </resource>
 				<resource  resource_type="Shape2D" path="local://44">  </resource>
 				<resource  resource_type="Shape2D" path="local://45">  </resource>
-				<int> 1 </int>
 				<vector2> 0, 0 </vector2>
 				<real> 0 </real>
 				<real> 1 </real>
@@ -504,11 +548,52 @@
 				<vector2> 0, 7 </vector2>
 				<vector2_array  len="47"> 					1270.43, 182.826, 1278.24, 174.536, 1328.95, 182.338, 1386.5, 175.023, 1413.32, 175.511, 1485.99, 185.752, 1520.12, 174.536, 1534.75, 177.949, 1557.19, 174.048, 1577.67, 177.462, 1642.04, 192.58, 1671.3, 207.21, 1699.1, 220.865, 1722.02, 228.667, 1765.42, 240.372, 1811.75, 240.372, 1839.55, 237.446, 1862.47, 226.717, 1877.59, 211.111, 1888.32, 192.58, 1892.71, 176.974, 1904.41, 175.023, 1941.47, 181.363, 1980.49, 175.023, 2039.5, 175.023, 2069.73, 178.437, 2116.55, 175.511, 2151.66, 175.511, 2167.27, 176.974, 2167.27, 149.176, 2178, 142.837, 2229.93, 144.544, 2231.75, 114.988, 2243.03, 110.344, 2352.34, 111.382, 2357.7, 113.82, 2359.17, 68.2224, 2379.03, 62.578, 2404.03, 61.8826, 2456.7, 65.784, 2499.62, 58.9566, 2546.92, 64.8087, 2580.08, 60.4196, 2609.83, 64.8087, 2614.71, 71.1484, 2615.21, 306.101, 1270.97, 305.816 </vector2_array>
 				<vector2> 8, 25 </vector2>
-				<vector2> 50, 50 </vector2>
+				<resource  external="1">  </resource>
+				<vector2> 67.8496, 207.131 </vector2>
+				<vector2> 99.8519, 207.143 </vector2>
+				<vector2> 323.859, 207.139 </vector2>
+				<vector2> 355.853, 207.136 </vector2>
+				<vector2> 1315.85, 143.135 </vector2>
+				<vector2> 1347.85, 143.136 </vector2>
+				<vector2> 1443.86, 143.153 </vector2>
+				<vector2> 2083.85, 143.144 </vector2>
+				<vector2> 3139.85, -48.8635 </vector2>
+				<vector2> 3171.85, -48.8609 </vector2>
+				<vector2> 3651.84, 143.136 </vector2>
+				<vector2> 3795.85, 207.149 </vector2>
+				<vector2> 4035.85, -112.865 </vector2>
+				<vector2> 4387.85, -112.861 </vector2>
+				<vector2> 4659.87, -176.838 </vector2>
+				<vector2> 4931.86, -112.857 </vector2>
+				<vector2> 5075.85, -48.8481 </vector2>
+				<vector2> 5187.85, -48.8666 </vector2>
+				<vector2> 5219.85, -48.8698 </vector2>
+				<vector2> 6211.85, -624.843 </vector2>
+				<vector2> 6307.85, -624.866 </vector2>
+				<vector2> 6355.85, -624.873 </vector2>
+				<vector2> 6467.86, -624.87 </vector2>
+				<vector2> 6563.85, -624.871 </vector2>
+				<vector2> 6611.86, -624.871 </vector2>
+				<vector2> 6723.86, -624.868 </vector2>
+				<vector2> 6819.85, -624.871 </vector2>
+				<vector2> 6867.85, -624.865 </vector2>
+				<vector2> 6979.85, 399.14 </vector2>
+				<vector2> 7123.85, 463.14 </vector2>
+				<vector2> 7459.85, 143.133 </vector2>
+				<vector2> 7491.86, 143.136 </vector2>
+				<vector2> 7587.86, 143.141 </vector2>
+				<vector2> 9027.85, 399.143 </vector2>
+				<vector2> 9171.85, 463.136 </vector2>
+				<vector2> 9283.86, 463.138 </vector2>
+				<vector2> 9315.86, 463.13 </vector2>
+				<vector2> 9539.86, 463.13 </vector2>
+				<vector2> 9571.85, 463.131 </vector2>
+				<vector2> 91.1651, 146.297 </vector2>
+				<int> 2 </int>
 				<resource  resource_type="Shape2D" path="local://18">  </resource>
 				<real> 0.08 </real>
-				<resource  external="1">  </resource>
 				<resource  external="2">  </resource>
+				<resource  external="3">  </resource>
 				<int> 3 </int>
 				<int> 10 </int>
 				<node_path> ".." </node_path>
@@ -518,7 +603,6 @@
 				<resource  resource_type="Animation" path="local://6">  </resource>
 				<resource  resource_type="Animation" path="local://9">  </resource>
 				<resource  resource_type="Animation" path="local://5">  </resource>
-				<bool> True </bool>
 				<array  len="0" shared="false">
 				</array>
 				<string> "" </string>
@@ -529,7 +613,7 @@
 				<real> 0.2 </real>
 				<real> 0.6 </real>
 				<vector2> 0, 21 </vector2>
-				<vector2> 0, 1 </vector2>
+				<vector2> 0, 5 </vector2>
 				<int> 15 </int>
 				<vector2> 6, 19 </vector2>
 				<real> 45 </real>

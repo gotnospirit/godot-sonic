@@ -30,7 +30,6 @@ var prev_jump_pressed = false
 
 var animation = ''
 var new_animation = ''
-var jumped = false
 
 func _fixed_process(delta):
 	# Create forces
@@ -140,17 +139,13 @@ func _fixed_process(delta):
 	elif down && on_floor:
 		new_animation = 'down'
 
-	if velocity.x > 360 || velocity.x < -360:
-		new_animation = 'running'
-	elif (velocity.x < 360 && velocity.x > 0) && on_floor || (velocity.x > -360 && velocity.x < 0) && on_floor:
-		new_animation = 'walking'
-
-	if jump:
-		jumped = true
 	if on_floor:
-		jumped = false
+		if velocity.x > 360 || velocity.x < -360:
+			new_animation = 'running'
+		elif (velocity.x < 360 && velocity.x > 0) || (velocity.x > -360 && velocity.x < 0):
+			new_animation = 'walking'
 
-	if jumped:
+	if jump && !on_floor:
 		new_animation = 'rolling'
 
 	if animation != new_animation:
