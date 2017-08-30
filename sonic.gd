@@ -8,15 +8,15 @@ extends KinematicBody2D
 # as long as it starts from a non-colliding spot too.
 
 # Member variables
-const GRAVITY = 500.0 # Pixels/second
+const GRAVITY = 900.0 # Pixels/second
 
 # Angle in degrees towards either side that the player can consider "floor"
 const FLOOR_ANGLE_TOLERANCE = 40
-const WALK_FORCE = 600
-const WALK_MIN_SPEED = 10
-const WALK_MAX_SPEED = 200
-const STOP_FORCE = 1300
-const JUMP_SPEED = 200
+const WALK_FORCE = 495
+const WALK_MIN_SPEED = 0.1
+const WALK_MAX_SPEED = 400
+const STOP_FORCE = 800
+const JUMP_SPEED = 450
 const JUMP_MAX_AIRBORNE_TIME = 0.2
 
 const SLIDE_STOP_VELOCITY = 1.0 # One pixel per second
@@ -30,6 +30,7 @@ var prev_jump_pressed = false
 
 var animation = ''
 var new_animation = ''
+var jumped = false
 
 func _fixed_process(delta):
 	# Create forces
@@ -53,6 +54,8 @@ func _fixed_process(delta):
 			stop = false
 	
 	if (stop):
+		new_animation = 'stopped'
+	
 		var vsign = sign(velocity.x)
 		var vlen = abs(velocity.x)
 		
@@ -122,24 +125,33 @@ func _fixed_process(delta):
 	on_air_time += delta
 	prev_jump_pressed = jump
 
-	new_animation = 'stopped'
+	var on_floor = get_node("sonicRaycast").is_colliding() || get_node("sonicRaycast1").is_colliding() || get_node("sonicRaycast2").is_colliding()
+	var walking = on_floor && (walk_left || walk_right)
 
-	if walk_left:
-		get_node('sonicSprite').set_flip_h(true)
+	if walking:
 		new_animation = 'walking'
 
-	if walk_right:
-		get_node('sonicSprite').set_flip_h(false)
+		if velocity.x > 0:
+			get_node('sonicSprite').set_flip_h(false)
+		else:
+			get_node('sonicSprite').set_flip_h(true)
+	elif up && on_floor:
+		new_animation = 'up'
+	elif down && on_floor:
+		new_animation = 'down'
+
+	if velocity.x > 360 || velocity.x < -360:
+		new_animation = 'running'
+	elif (velocity.x < 360 && velocity.x > 0) && on_floor || (velocity.x > -360 && velocity.x < 0) && on_floor:
 		new_animation = 'walking'
 
 	if jump:
+		jumped = true
+	if on_floor:
+		jumped = false
+
+	if jumped:
 		new_animation = 'rolling'
-
-	if up:
-		new_animation = 'up'
-
-	if down:
-		new_animation = 'down'
 
 	if animation != new_animation:
 		animation = new_animation
