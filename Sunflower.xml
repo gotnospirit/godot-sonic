@@ -2,8 +2,8 @@
 <resource_file type="PackedScene" subresource_count="3" version="2.1" version_name="Godot Engine v2.1.3.stable.official">
 	<ext_resource path="res://flowers.png" type="Texture" index="0"></ext_resource>
 	<resource type="Animation" path="local://1">
-		<string name="resource/name"> "flower" </string>
-		<real name="length"> 4.3 </real>
+		<string name="resource/name"> "sunflower" </string>
+		<real name="length"> 1 </real>
 		<bool name="loop"> True </bool>
 		<real name="step"> 0.1 </real>
 		<string name="tracks/0/type"> "value" </string>
@@ -12,17 +12,15 @@
 		<bool name="tracks/0/imported"> False </bool>
 		<dictionary name="tracks/0/keys" shared="false">
 			<string> "times" </string>
-			<real_array  len="4"> 				0, 2, 2.3, 4 </real_array>
+			<real_array  len="2"> 				0, 0.3 </real_array>
 			<string> "transitions" </string>
-			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
+			<real_array  len="2"> 				1, 1 </real_array>
 			<string> "update" </string>
 			<int> 1 </int>
 			<string> "values" </string>
-			<array  len="4" shared="false">
-				<int> 2 </int>
-				<int> 1 </int>
-				<int> 0 </int>
-				<int> 1 </int>
+			<array  len="2" shared="false">
+				<int> 3 </int>
+				<int> 4 </int>
 			</array>
 		</dictionary>
 
@@ -38,7 +36,7 @@
 			</array>
 			<string> "names" </string>
 			<string_array  len="16">
-				<string> "Flower" </string>
+				<string> "Sunflower" </string>
 				<string> "Sprite" </string>
 				<string> "flowers" </string>
 				<string> "texture" </string>
@@ -48,7 +46,7 @@
 				<string> "playback/process_mode" </string>
 				<string> "playback/default_blend_time" </string>
 				<string> "root/root" </string>
-				<string> "anims/flower" </string>
+				<string> "anims/sunflower" </string>
 				<string> "playback/active" </string>
 				<string> "playback/speed" </string>
 				<string> "blend_times" </string>
@@ -66,7 +64,7 @@
 			<array  len="11" shared="false">
 				<resource  external="0">  </resource>
 				<int> 5 </int>
-				<int> 2 </int>
+				<int> 4 </int>
 				<int> 1 </int>
 				<real> 0 </real>
 				<node_path> ".." </node_path>
@@ -75,7 +73,7 @@
 				<real> 1 </real>
 				<array  len="0" shared="false">
 				</array>
-				<string> "flower" </string>
+				<string> "sunflower" </string>
 			</array>
 			<string> "version" </string>
 			<int> 2 </int>
