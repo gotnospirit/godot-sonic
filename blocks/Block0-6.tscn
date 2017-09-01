@@ -5,9 +5,9 @@
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -128, 0, -69, 0, -66, 1, -64, 4, -64, 11, -68, 15, -128, 15 )
+points = Vector2Array( -128, -128, -126, -128, -126, -115, -128, -115 )
 
-[node name="Block7-1" type="Node2D"]
+[node name="Block0-6" type="Node2D"]
 
 [node name="body" type="StaticBody2D" parent="."]
 
@@ -27,12 +27,12 @@ bounce = 0.0
 texture = ExtResource( 1 )
 vframes = 11
 hframes = 5
-frame = 36
+frame = 30
 
 [node name="polygon" type="CollisionPolygon2D" parent="body"]
 
 build_mode = 0
-polygon = Vector2Array( -128, 0, -69, 0, -66, 1, -64, 4, -64, 11, -68, 15, -128, 15 )
+polygon = Vector2Array( -128, -128, -126, -128, -126, -115, -128, -115 )
 shape_range = Vector2( 0, 0 )
 trigger = false
 

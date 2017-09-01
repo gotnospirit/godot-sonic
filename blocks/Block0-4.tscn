@@ -1,0 +1,102 @@
+[gd_scene load_steps=10 format=1]
+
+[ext_resource path="res://textures/ghz_tiles.png" type="Texture" id=1]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -70, -91, -115, -97, -128, -99, -128, -112, -115, -114, -69, -106, -34, -91 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -34, -91, -69, -106, -20, -109, -3, -93 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -3, -93, -20, -109, 28, -114, 14, -97 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 64, -108, 64, -102, 60, -98, 50, -97, 14, -97, 28, -114, 59, -113, 63, -110 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 113, -1, 128, 1, 128, 15, 46, 17, 80, 1 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 43, 1, 80, 1, 46, 17, 16, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -49, 31, 16, 16, 46, 17, 3, 38, -43, 50, -60, 47 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -62, 31, -49, 31, -60, 47, -68, 43, -68, 36 )
+
+[node name="Block0-4" type="Node2D"]
+
+[node name="body" type="StaticBody2D" parent="."]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 2 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 3 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 4 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 5 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 6 )
+shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/5/trigger = false
+shapes/6/shape = SubResource( 7 )
+shapes/6/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/6/trigger = false
+shapes/7/shape = SubResource( 8 )
+shapes/7/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/7/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="sprite" type="Sprite" parent="body"]
+
+texture = ExtResource( 1 )
+vframes = 11
+hframes = 5
+frame = 20
+
+[node name="polygon" type="CollisionPolygon2D" parent="body"]
+
+build_mode = 0
+polygon = Vector2Array( -128, -112, -115, -114, -69, -106, -20, -109, 28, -114, 59, -113, 63, -110, 64, -108, 64, -102, 60, -98, 50, -97, 14, -97, -3, -93, -34, -91, -70, -91, -115, -97, -128, -99 )
+shape_range = Vector2( 0, 3 )
+trigger = false
+
+[node name="polygon 2" type="CollisionPolygon2D" parent="body"]
+
+build_mode = 0
+polygon = Vector2Array( -68, 36, -62, 31, -49, 31, 16, 16, 43, 1, 80, 1, 113, -1, 128, 1, 128, 15, 46, 17, 3, 38, -43, 50, -60, 47, -68, 43 )
+shape_range = Vector2( 4, 7 )
+trigger = false
+
+

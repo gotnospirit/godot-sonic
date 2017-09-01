@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=1]
+[gd_scene load_steps=31 format=1]
 
 [ext_resource path="res://green_hill_zone.png" type="Texture" id=1]
 [ext_resource path="res://Ridge.tscn" type="PackedScene" id=2]
@@ -11,9 +11,25 @@
 [ext_resource path="res://Platform.tscn" type="PackedScene" id=9]
 [ext_resource path="res://blocks/Block0-9.tscn" type="PackedScene" id=10]
 [ext_resource path="res://blocks/Block3-0.tscn" type="PackedScene" id=11]
-[ext_resource path="res://blocks/Block9-3.tscn" type="PackedScene" id=12]
-[ext_resource path="res://blocks/Block7-1.tscn" type="PackedScene" id=13]
-[ext_resource path="res://Sonic.tscn" type="PackedScene" id=14]
+[ext_resource path="res://blocks/Block3-9.tscn" type="PackedScene" id=12]
+[ext_resource path="res://blocks/Block1-7.tscn" type="PackedScene" id=13]
+[ext_resource path="res://blocks/Block1-3.tscn" type="PackedScene" id=14]
+[ext_resource path="res://blocks/Block2-0.tscn" type="PackedScene" id=15]
+[ext_resource path="res://blocks/Block2-1.tscn" type="PackedScene" id=16]
+[ext_resource path="res://blocks/Block4-0.tscn" type="PackedScene" id=17]
+[ext_resource path="res://blocks/Block0-1.tscn" type="PackedScene" id=18]
+[ext_resource path="res://blocks/Block3-8.tscn" type="PackedScene" id=19]
+[ext_resource path="res://blocks/Block4-2.tscn" type="PackedScene" id=20]
+[ext_resource path="res://blocks/Block0-6.tscn" type="PackedScene" id=21]
+[ext_resource path="res://blocks/Block2-3.tscn" type="PackedScene" id=22]
+[ext_resource path="res://blocks/Block2-7.tscn" type="PackedScene" id=23]
+[ext_resource path="res://blocks/Block0-4.tscn" type="PackedScene" id=24]
+[ext_resource path="res://blocks/Block1-4.tscn" type="PackedScene" id=25]
+[ext_resource path="res://blocks/Block3-7.tscn" type="PackedScene" id=26]
+[ext_resource path="res://blocks/Block2-10.tscn" type="PackedScene" id=27]
+[ext_resource path="res://blocks/Block3-1.tscn" type="PackedScene" id=28]
+[ext_resource path="res://blocks/Block0-7.tscn" type="PackedScene" id=29]
+[ext_resource path="res://Sonic.tscn" type="PackedScene" id=30]
 
 [node name="Game" type="Node2D"]
 
@@ -40,6 +56,7 @@ texture = ExtResource( 1 )
 [node name="Ridge" parent="Green Hill Zone - Stg1" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 3782, -158 )
+transform/scale = Vector2( -1, 1 )
 
 [node name="Ridge 2" parent="Green Hill Zone - Stg1" instance=ExtResource( 2 )]
 
@@ -48,6 +65,7 @@ transform/pos = Vector2( 4118, -46 )
 [node name="Ridge 3" parent="Green Hill Zone - Stg1" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 4246, -46 )
+transform/scale = Vector2( -1, 1 )
 
 [node name="Flowers" type="Node2D" parent="Green Hill Zone - Stg1"]
 
@@ -1026,14 +1044,106 @@ transform/pos = Vector2( 374, 178 )
 
 transform/pos = Vector2( 630, 178 )
 
-[node name="Block9-3" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 12 )]
+[node name="Block3-9" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 886, 178 )
 
-[node name="Block7-1" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 13 )]
+[node name="Block1-7" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 13 )]
 
-transform/pos = Vector2( 1142, 178 )
+transform/pos = Vector2( 1142, 177 )
 
-[node name="Sonic" parent="." instance=ExtResource( 14 )]
+[node name="Block1-3" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( 1398, 178 )
+
+[node name="Block2-0" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 15 )]
+
+transform/pos = Vector2( 1654, 178 )
+
+[node name="Block2-1" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 16 )]
+
+transform/pos = Vector2( 1910, 178 )
+
+[node name="Block4-0" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 17 )]
+
+transform/pos = Vector2( 2166, 178 )
+
+[node name="Block0-1" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 18 )]
+
+transform/pos = Vector2( 2422, 178 )
+
+[node name="Block3-8" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 19 )]
+
+transform/pos = Vector2( 2678, 178 )
+
+[node name="Block4-2" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 20 )]
+
+transform/pos = Vector2( 2934, 178 )
+
+[node name="Block0-6" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 21 )]
+
+transform/pos = Vector2( 3190, 178 )
+
+[node name="Block0-9 3" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 3190, -78 )
+
+[node name="Block3-9 2" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 12 )]
+
+transform/pos = Vector2( 3446, -78 )
+
+[node name="Block2-3" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 22 )]
+
+transform/pos = Vector2( 3446, 178 )
+
+[node name="Block2-7" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 23 )]
+
+transform/pos = Vector2( 3702, 178 )
+
+[node name="Block1-7 2" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 13 )]
+
+transform/pos = Vector2( 3702, -78 )
+
+[node name="Block0-4" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 24 )]
+
+transform/pos = Vector2( 3958, -78 )
+
+[node name="Block1-4" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 25 )]
+
+transform/pos = Vector2( 3958, 178 )
+
+[node name="Block3-7" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 26 )]
+
+transform/pos = Vector2( 4214, 178 )
+
+[node name="Block2-10" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 27 )]
+
+transform/pos = Vector2( 4214, -78 )
+
+[node name="Block4-0 2" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 17 )]
+
+transform/pos = Vector2( 4470, -78 )
+
+[node name="Block2-3 2" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 22 )]
+
+transform/pos = Vector2( 4470, 178 )
+
+[node name="Block3-1" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 28 )]
+
+transform/pos = Vector2( 4726, 178 )
+
+[node name="Block0-7" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 29 )]
+
+transform/pos = Vector2( 4726, -78 )
+
+[node name="Block2-10 2" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 27 )]
+
+transform/pos = Vector2( 4726, -334 )
+
+[node name="Block1-7 3" parent="Green Hill Zone - Stg1/Grounds" instance=ExtResource( 13 )]
+
+transform/pos = Vector2( 4982, -334 )
+
+[node name="Sonic" parent="." instance=ExtResource( 30 )]
 
 

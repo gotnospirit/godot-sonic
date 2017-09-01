@@ -5,29 +5,29 @@
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -126, 80, -126, 128, -128, 128, -128.025, 78.8859, -127.999, 64.2934 )
+points = Vector2Array( 119, 0, 128, 0, 128, 13, 115, 15, 97, 5 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 5, 63, 116, 63, 128, 64, 127.881, 78.5484, 0.267681, 80.0906, -27.8042, 64.3194 )
+points = Vector2Array( 97, 5, 115, 15, 80, 23, 81, 6 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -27.8042, 64.3194, 0.267681, 80.0906, -31.6034, 82.1468, -67.1082, 70.3245 )
+points = Vector2Array( 49, 4, 81, 6, 80, 23, 48, 22, 12, 15 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -116.053, 62.3217, -67.1082, 70.3245, -31.6034, 82.1468, -58.077, 86.7732, -94.1891, 84.46, -113.723, 78.6769 )
+points = Vector2Array( -15, -1, 12, -1, 49, 4, 12, 15, -15, 16, -64, 5 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -116.053, 62.3217, -113.723, 78.6769, -126, 80, -127.999, 64.2934 )
+points = Vector2Array( -128, 4, -123, -1, -114, -1, -64, 5, -15, 16, -64, 22, -115, 16, -127, 13, -128, 10 )
 
-[node name="Block0-9" type="Node2D"]
+[node name="Block1-3" type="Node2D"]
 
 [node name="body" type="StaticBody2D" parent="."]
 
@@ -59,12 +59,12 @@ bounce = 0.0
 texture = ExtResource( 1 )
 vframes = 11
 hframes = 5
-frame = 45
+frame = 16
 
 [node name="polygon" type="CollisionPolygon2D" parent="body"]
 
 build_mode = 0
-polygon = Vector2Array( -127.999, 64.2934, -116.053, 62.3217, -67.1082, 70.3245, -27.8042, 64.3194, 5, 63, 116, 63, 128, 64, 127.881, 78.5484, 0.267681, 80.0906, -31.6034, 82.1468, -58.077, 86.7732, -94.1891, 84.46, -113.723, 78.6769, -126, 80, -126, 128, -128, 128, -128.025, 78.8859 )
+polygon = Vector2Array( -128, 4, -123, -1, -114, -1, -64, 5, -15, -1, 12, -1, 49, 4, 81, 6, 97, 5, 119, 0, 128, 0, 128, 13, 115, 15, 80, 23, 48, 22, 12, 15, -15, 16, -64, 22, -115, 16, -127, 13, -128, 10 )
 shape_range = Vector2( 0, 4 )
 trigger = false
 

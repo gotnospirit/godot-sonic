@@ -5,29 +5,29 @@
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -126, 80, -126, 128, -128, 128, -128.025, 78.8859, -127.999, 64.2934 )
+points = Vector2Array( -67, 14, -128, 15, -128, -1, -65, -1, -48, 2 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 5, 63, 116, 63, 128, 64, 127.881, 78.5484, 0.267681, 80.0906, -27.8042, 64.3194 )
+points = Vector2Array( -48, 20, -67, 14, -48, 2, -30, 7 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -27.8042, 64.3194, 0.267681, 80.0906, -31.6034, 82.1468, -67.1082, 70.3245 )
+points = Vector2Array( 82, 83, -48, 20, -30, 7, 82, 65, 97, 80 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -116.053, 62.3217, -67.1082, 70.3245, -31.6034, 82.1468, -58.077, 86.7732, -94.1891, 84.46, -113.723, 78.6769 )
+points = Vector2Array( 97, 80, 82, 65, 97, 66, 113, 78 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -116.053, 62.3217, -113.723, 78.6769, -126, 80, -127.999, 64.2934 )
+points = Vector2Array( 113, 78, 97, 66, 113, 64, 128, 64, 128, 78 )
 
-[node name="Block0-9" type="Node2D"]
+[node name="Block2-7" type="Node2D"]
 
 [node name="body" type="StaticBody2D" parent="."]
 
@@ -59,12 +59,12 @@ bounce = 0.0
 texture = ExtResource( 1 )
 vframes = 11
 hframes = 5
-frame = 45
+frame = 37
 
 [node name="polygon" type="CollisionPolygon2D" parent="body"]
 
 build_mode = 0
-polygon = Vector2Array( -127.999, 64.2934, -116.053, 62.3217, -67.1082, 70.3245, -27.8042, 64.3194, 5, 63, 116, 63, 128, 64, 127.881, 78.5484, 0.267681, 80.0906, -31.6034, 82.1468, -58.077, 86.7732, -94.1891, 84.46, -113.723, 78.6769, -126, 80, -126, 128, -128, 128, -128.025, 78.8859 )
+polygon = Vector2Array( -128, -1, -65, -1, -48, 2, -30, 7, 82, 65, 97, 66, 113, 64, 128, 64, 128, 78, 113, 78, 97, 80, 82, 83, -48, 20, -67, 14, -128, 15 )
 shape_range = Vector2( 0, 4 )
 trigger = false
 

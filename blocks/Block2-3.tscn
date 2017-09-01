@@ -1,23 +1,23 @@
 [gd_scene load_steps=5 format=1]
 
-[ext_resource path="res://textures/ridge.png" type="Texture" id=1]
+[ext_resource path="res://textures/ghz_tiles.png" type="Texture" id=1]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -36, -17, -48, -18, -48, -32, -38, -34, -36, -34, 29, -17 )
+points = Vector2Array( -86, 15, -128, 15, -128, 0, -85, 0, -34, 6 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 24, 1, -36, -17, 29, -17, 43, -1 )
+points = Vector2Array( 1, 24, -35, 21, -86, 15, -34, 6, 1, 7, 60, 16 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 48, -12, 48, -5, 43, -1, 29, -17, 43, -17, 45, -16 )
+points = Vector2Array( 60, 0, 91, -1, 128, -1, 128, 14, 60, 16, 1, 7 )
 
-[node name="Ridge" type="Node2D"]
+[node name="Block2-3" type="Node2D"]
 
 [node name="body" type="StaticBody2D" parent="."]
 
@@ -41,11 +41,14 @@ bounce = 0.0
 [node name="sprite" type="Sprite" parent="body"]
 
 texture = ExtResource( 1 )
+vframes = 11
+hframes = 5
+frame = 17
 
 [node name="polygon" type="CollisionPolygon2D" parent="body"]
 
 build_mode = 0
-polygon = Vector2Array( -48, -32, -38, -34, -36, -34, 29, -17, 43, -17, 45, -16, 48, -12, 48, -5, 43, -1, 24, 1, -36, -17, -48, -18 )
+polygon = Vector2Array( -128, 0, -85, 0, -34, 6, 1, 7, 60, 0, 91, -1, 128, -1, 128, 14, 60, 16, 1, 24, -35, 21, -86, 15, -128, 15 )
 shape_range = Vector2( 0, 2 )
 trigger = false
 
