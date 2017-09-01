@@ -1,0 +1,64 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://tilesets/TileWaterfall.tres" type="TileSet" id=1]
+
+[sub_resource type="Animation" id=1]
+
+resource/name = "waterfall"
+length = 0.8
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("tilemap:tile_set:0/region")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 2,
+"values": [ Rect2( 0, 0, 32, 32 ), Rect2( 32, 0, 32, 32 ), Rect2( 64, 0, 32, 32 ), Rect2( 96, 0, 32, 32 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("tilemap:tile_set:1/region")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 2,
+"values": [ Rect2( 0, 32, 32, 32 ), Rect2( 32, 32, 32, 32 ), Rect2( 64, 32, 32, 32 ), Rect2( 96, 32, 32, 32 ) ]
+}
+
+[node name="GreatWaterfall" type="Node2D"]
+
+[node name="tilemap" type="TileMap" parent="."]
+
+transform/pos = Vector2( -29.7779, -0.945923 )
+mode = 0
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 32, 32 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 0, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 65536, 1, 65537, 1, 65538, 1, 65539, 1, 65540, 1, 65541, 1, 131072, 1, 131073, 1, 131074, 1, 131075, 1, 131076, 1, 131077, 1, 196608, 1, 196609, 1, 196610, 1, 196611, 1, 196612, 1, 196613, 1, 262144, 1, 262145, 1, 262146, 1, 262147, 1, 262148, 1, 262149, 1, 327680, 1, 327681, 1, 327682, 1, 327683, 1, 327684, 1, 327685, 1, 393216, 1, 393217, 1, 393218, 1, 393219, 1, 393220, 1, 393221, 1, 458752, 1, 458753, 1, 458754, 1, 458755, 1, 458756, 1, 458757, 1, 524288, 1, 524289, 1, 524290, 1, 524291, 1, 524292, 1, 524293, 1, 589824, 1, 589825, 1, 589826, 1, 589827, 1, 589828, 1, 589829, 1, 655360, 1, 655361, 1, 655362, 1, 655363, 1, 655364, 1, 655365, 1, 720896, 1, 720897, 1, 720898, 1, 720899, 1, 720900, 1, 720901, 1 )
+
+[node name="animation" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/waterfall = SubResource( 1 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "waterfall"
+
+

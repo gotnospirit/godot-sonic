@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://textures/waterfall.png" type="Texture" id=1]
+
+[node name="TileWaterfall" type="Node"]
+
+[node name="top" type="Sprite" parent="."]
+
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 0, 0, 128, 32 )
+
+[node name="bottom" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 32 )
+texture = ExtResource( 1 )
+vframes = 2
+region = true
+region_rect = Rect2( 0, 32, 128, 32 )
+
+

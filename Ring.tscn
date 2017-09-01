@@ -1,0 +1,92 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://textures/ring.png" type="Texture" id=1]
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -4.95222, -6.99156, -2.88839, -8.00472, 2.89035, -7.96719, 4.91667, -6.95404, 6.9805, -4.96525, 7.99366, -2.90141, 7.99366, 3.15876, 6.9805, 5.11002, 4.87914, 7.09881, 2.89035, 7.99939, -3.00096, 7.99939, -4.98975, 6.98624, -6.97853, 4.99745, -7.87912, 3.00866, -7.91664, -2.88265, -6.94101, -4.94649 )
+
+[sub_resource type="Animation" id=3]
+
+resource/name = "collect"
+length = 0.8
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("sprite:frame")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 4, 5, 6, 7 ]
+}
+
+[sub_resource type="Animation" id=1]
+
+resource/name = "rotation"
+length = 0.8
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("sprite:frame")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("polygon:polygon")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Vector2Array( -4.95222, -6.99156, -2.88839, -8.00472, 2.89035, -7.96719, 4.91667, -6.95404, 6.9805, -4.96525, 7.99366, -2.90141, 7.99366, 3.15876, 6.9805, 5.11002, 4.87914, 7.09881, 2.89035, 7.99939, -3.00096, 7.99939, -4.98975, 6.98624, -6.97853, 4.99745, -7.87912, 3.00866, -7.91664, -2.88265, -6.94101, -4.94649 ), Vector2Array( -1.95028, -8.00472, 1.91472, -8.00472, 3.97856, -6.95404, 5.02924, -5.97841, 6.00487, -3.9521, 5.96735, 3.90924, 4.99171, 5.82298, 3.90351, 6.91119, 1.98977, 7.96187, -2.02533, 7.99939, -4.87717, 4.88488, -5.92785, 2.89609, -5.92785, -2.9577, -4.9147, -4.96525 ), Vector2Array( -0.974648, -8.00472, 0.976615, -8.00472, 2.9654, -5.92212, 2.92788, 5.95432, 0.976615, 7.94311, -1.01217, 7.94311, -2.92591, 5.87927, -3.00096, -5.99717 ), Vector2Array( -2.0317, -7.92194, 1.91822, -7.92194, 4.95343, -5.01146, 5.95131, -2.89098, 5.95131, 2.92997, 4.99501, 5.02966, 2.00138, 8.06487, -1.99012, 8.02329, -3.9443, 6.98384, -5.02533, 5.9028, -5.94005, 3.86547, -6.06478, -3.90964, -5.01525, -5.94801, -4.0655, -7.0405 ) ]
+}
+
+[node name="Ring" type="Node2D"]
+
+[node name="area" type="Area2D" parent="."]
+
+input/pickable = true
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, -0.0375242 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="sprite" type="Sprite" parent="area"]
+
+texture = ExtResource( 1 )
+hframes = 8
+
+[node name="animation" type="AnimationPlayer" parent="area"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/collect = SubResource( 3 )
+anims/rotation = SubResource( 1 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "rotation"
+
+[node name="polygon" type="CollisionPolygon2D" parent="area"]
+
+transform/pos = Vector2( 0, -0.0375242 )
+build_mode = 0
+polygon = Vector2Array( -4.95222, -6.99156, -2.88839, -8.00472, 2.89035, -7.96719, 4.91667, -6.95404, 6.9805, -4.96525, 7.99366, -2.90141, 7.99366, 3.15876, 6.9805, 5.11002, 4.87914, 7.09881, 2.89035, 7.99939, -3.00096, 7.99939, -4.98975, 6.98624, -6.97853, 4.99745, -7.87912, 3.00866, -7.91664, -2.88265, -6.94101, -4.94649 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+

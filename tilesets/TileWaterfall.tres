@@ -1,6 +1,6 @@
 [gd_resource type="TileSet" load_steps=2 format=1]
 
-[ext_resource path="res://waterfall.png" type="Texture" id=1]
+[ext_resource path="res://textures/waterfall.png" type="Texture" id=1]
 
 [resource]
 
