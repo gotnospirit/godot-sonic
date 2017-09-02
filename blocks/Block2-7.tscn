@@ -35,7 +35,6 @@ points = Vector2Array( 113, 78, 97, 66, 113, 64, 128, 64, 128, 78 )
 
 [node name="ground" type="StaticBody2D" parent="."]
 
-z/z = 2
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )

@@ -17,7 +17,6 @@ points = Vector2Array( 68, -1, 64, 4, 66, 0 )
 
 [node name="ground" type="StaticBody2D" parent="."]
 
-z/z = 2
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -49,7 +48,7 @@ trigger = false
 [node name="totem" type="TileMap" parent="."]
 
 z/z = 1
-mode = 2
+mode = 0
 tile_set = ExtResource( 2 )
 cell/size = Vector2( 16, 16 )
 cell/quadrant_size = 16
