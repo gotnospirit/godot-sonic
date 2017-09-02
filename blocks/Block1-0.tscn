@@ -1,6 +1,8 @@
-[gd_scene load_steps=8 format=1]
+[gd_scene load_steps=10 format=1]
 
 [ext_resource path="res://textures/ghz_tiles.png" type="Texture" id=1]
+[ext_resource path="res://textures/palm_head.png" type="Texture" id=2]
+[ext_resource path="res://tilesets/TilePalm.tres" type="TileSet" id=3]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -34,7 +36,7 @@ points = Vector2Array( -113, -1, -70, 6, -96, 20, -128, 15, -128, 0 )
 
 [node name="Block1-0" type="Node2D"]
 
-[node name="body" type="StaticBody2D" parent="."]
+[node name="ground" type="StaticBody2D" parent="."]
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
@@ -62,18 +64,46 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="body"]
+[node name="sprite" type="Sprite" parent="ground"]
 
 texture = ExtResource( 1 )
 vframes = 11
 hframes = 5
 frame = 1
 
-[node name="polygon" type="CollisionPolygon2D" parent="body"]
+[node name="polygon" type="CollisionPolygon2D" parent="ground"]
 
 build_mode = 0
 polygon = Vector2Array( -128, 0, -113, -1, -70, 6, -58, 6, -15, -2, 10, -2, 68, 5, 97, 4, 116, 1, 128, 0, 128, 17, 85, 23, 56, 22, 11, 15, -14, 16, -34, 21, -70, 23, -96, 20, -128, 15 )
 shape_range = Vector2( 0, 5 )
 trigger = false
+
+[node name="palm" type="Node2D" parent="."]
+
+z/z = 1
+
+[node name="head" type="Sprite" parent="palm"]
+
+transform/pos = Vector2( -32, -127 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="body" type="TileMap" parent="palm"]
+
+mode = 0
+tile_set = ExtResource( 3 )
+cell/size = Vector2( 16, 16 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( -262144, 0, -196608, 0, -131072, 0, -65536, 3 )
 
 
