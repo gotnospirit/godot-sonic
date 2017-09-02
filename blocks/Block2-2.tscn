@@ -5,47 +5,47 @@
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 113, -1, 128, -1, 128, 15, 106, 17 )
+points = Vector2Array( 109, 190, 128, 190, 128, 207, 99, 207, 72, 196 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 89, -7, 113, -1, 106, 17, 52, 4, 65, -10 )
+points = Vector2Array( 45, 196, 72, 196, 99, 207, 72, 213, 44, 213, 5, 208 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 21, -32, 65, -10, 52, 4, -15, -29, -14, -49 )
+points = Vector2Array( -20, 191, 5, 191, 45, 196, 5, 208, -22, 208, -60, 195 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -108, -65, -64, -60, -14, -49, -15, -29, -75, -44, -82, -48 )
+points = Vector2Array( -85, 196, -60, 195, -22, 208, -71, 215, -128, 205 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -128, -64, -108, -65, -82, -48, -124, -48, -128, -51 )
+points = Vector2Array( -116, 190, -85, 196, -128, 205, -128, 192 )
 
-[node name="Block0-7" type="Node2D"]
+[node name="Block2-2" type="Node2D"]
 
 [node name="body" type="StaticBody2D" parent="."]
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, -128 )
 shapes/0/trigger = false
 shapes/1/shape = SubResource( 2 )
-shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, -128 )
 shapes/1/trigger = false
 shapes/2/shape = SubResource( 3 )
-shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, -128 )
 shapes/2/trigger = false
 shapes/3/shape = SubResource( 4 )
-shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, -128 )
 shapes/3/trigger = false
 shapes/4/shape = SubResource( 5 )
-shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, -128 )
 shapes/4/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -59,12 +59,13 @@ bounce = 0.0
 texture = ExtResource( 1 )
 vframes = 11
 hframes = 5
-frame = 35
+frame = 12
 
 [node name="polygon" type="CollisionPolygon2D" parent="body"]
 
+transform/pos = Vector2( 0, -128 )
 build_mode = 0
-polygon = Vector2Array( -128, -64, -108, -65, -64, -60, -14, -49, 21, -32, 65, -10, 89, -7, 113, -1, 128, -1, 128, 15, 106, 17, 52, 4, -15, -29, -75, -44, -82, -48, -124, -48, -128, -51 )
+polygon = Vector2Array( -128, 192, -116, 190, -85, 196, -60, 195, -20, 191, 5, 191, 45, 196, 72, 196, 109, 190, 128, 190, 128, 207, 99, 207, 72, 213, 44, 213, 5, 208, -22, 208, -71, 215, -128, 205 )
 shape_range = Vector2( 0, 4 )
 trigger = false
 

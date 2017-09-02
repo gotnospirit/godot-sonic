@@ -5,24 +5,24 @@
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 5, 63, 116, 63, 128, 64, 127.881, 78.5484, 0.267681, 80.0906, -27.8042, 64.3194 )
+points = Vector2Array( -85, 15, -128, 16, -128, 0, -92, -2, -12, 6 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -27.8042, 64.3194, 0.267681, 80.0906, -31.6034, 82.1468, -67.1082, 70.3245 )
+points = Vector2Array( 14, 24, -31, 23, -85, 15, -12, 6, 12, 6, 64, 16 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -116.053, 62.3217, -67.1082, 70.3245, -31.6034, 82.1468, -58.077, 86.7732, -94.1891, 84.46, -113.723, 78.6769 )
+points = Vector2Array( 108, 16, 64, 16, 12, 6, 76, -2, 128, -1, 128, 15 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -127.999, 64.2934, -116.053, 62.3217, -113.723, 78.6769, -126, 80, -128.025, 78.8859 )
+points = Vector2Array( 108, 16, 128, 15, 128, 78, 108, 78 )
 
-[node name="Block0-9" type="Node2D"]
+[node name="Block4-6" type="Node2D"]
 
 [node name="body" type="StaticBody2D" parent="."]
 
@@ -51,12 +51,12 @@ bounce = 0.0
 texture = ExtResource( 1 )
 vframes = 11
 hframes = 5
-frame = 45
+frame = 34
 
 [node name="polygon" type="CollisionPolygon2D" parent="body"]
 
 build_mode = 0
-polygon = Vector2Array( -127.999, 64.2934, -116.053, 62.3217, -67.1082, 70.3245, -27.8042, 64.3194, 5, 63, 116, 63, 128, 64, 127.881, 78.5484, 0.267681, 80.0906, -31.6034, 82.1468, -58.077, 86.7732, -94.1891, 84.46, -113.723, 78.6769, -126, 80, -128.025, 78.8859 )
+polygon = Vector2Array( -128, 0, -92, -2, -12, 6, 12, 6, 76, -2, 128, -1, 128, 15, 128, 78, 108, 78, 108, 16, 64, 16, 14, 24, -31, 23, -85, 15, -128, 16 )
 shape_range = Vector2( 0, 3 )
 trigger = false
 

@@ -5,47 +5,47 @@
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -64, -53, -68, -48, -128, -49, -128, -65, -69, -65, -64, -62 )
+points = Vector2Array( -68, -48, -118, -48, -128, -49, -128, -65, -69, -65, -64, -62, -58, -52 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -57, -97, -64, -53, -64, -62 )
+points = Vector2Array( 122, -112, 128, -112, 128, -97, 116, -97 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -57, -97, -64, -62, -64, -107 )
+points = Vector2Array( 93, -116, 122, -112, 116, -97, 93, -101 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 122, -112, 128, -112, 128, -97, 116, -97 )
+points = Vector2Array( 76, -117, 93, -116, 93, -101, 75, -102, 43, -113 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 93, -116, 122, -112, 116, -97, 93, -101 )
+points = Vector2Array( 4, -113, 43, -113, 75, -102, 43, -97, 4, -97 )
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 76, -117, 93, -116, 93, -101, 75, -102, 43, -113 )
+points = Vector2Array( -19, -116, -10, -116, 4, -113, 4, -97, -55, -97, -41, -112 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 4, -113, 43, -113, 75, -102, 43, -97, 4, -97 )
+points = Vector2Array( -61, -112, -52, -114, -41, -112, -55, -97, -64, -107 )
 
 [sub_resource type="ConvexPolygonShape2D" id=8]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -19, -116, -10, -116, 4, -113, 4, -97, -57, -97, -41, -112 )
+points = Vector2Array( -64, -62, -64, -107, -55, -97, -55, -68, -58, -52 )
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -52, -114, -41, -112, -57, -97, -64, -107, -61, -112 )
+points = Vector2Array( -118, -48, -118, 1, -128, 1, -128, -49 )
 
 [node name="Block0-1" type="Node2D"]
 
@@ -98,7 +98,7 @@ frame = 5
 [node name="polygon" type="CollisionPolygon2D" parent="body"]
 
 build_mode = 0
-polygon = Vector2Array( -128, -65, -69, -65, -64, -62, -64, -107, -61, -112, -52, -114, -41, -112, -19, -116, -10, -116, 4, -113, 43, -113, 76, -117, 93, -116, 122, -112, 128, -112, 128, -97, 116, -97, 93, -101, 75, -102, 43, -97, 4, -97, -57, -97, -64, -53, -68, -48, -128, -49 )
+polygon = Vector2Array( -128, -65, -69, -65, -64, -62, -64, -107, -61, -112, -52, -114, -41, -112, -19, -116, -10, -116, 4, -113, 43, -113, 76, -117, 93, -116, 122, -112, 128, -112, 128, -97, 116, -97, 93, -101, 75, -102, 43, -97, 4, -97, -55, -97, -55, -68, -58, -52, -68, -48, -118, -48, -118, 1, -128, 1, -128, -49 )
 shape_range = Vector2( 0, 8 )
 trigger = false
 

@@ -5,87 +5,87 @@
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 0, 3, 0, -55, 2, -28 )
+points = Vector2Array( -95, 84, -128, 78, -128, 63, -115, 63, -85, 68, -67, 85 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -15, 20, -123, 20, -128, 16, -128, 4, -108.774, 4, -80, 5 )
+points = Vector2Array( -67, 85, -85, 68, -68, 67, -25, 78 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -15, 20, -80, 5, -62, 4 )
+points = Vector2Array( -25, 78, -68, 67, -32, 61 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -15, 20, -62, 4, -51, 3, 0, 3, -1, 18 )
+points = Vector2Array( -25, 47, -25, 78, -32, 61, -32, 46, -31, 31 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 8, -12, -1, 18, 0, 3 )
+points = Vector2Array( 60, 9, 60, 3, 66, -1, 128, -1, 128, 13, 71, 15, 64, 12 )
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 8, -12, 0, 3, 2, -28, 11, -30 )
+points = Vector2Array( 64, 29, 64, 12, 71, 15, 70, 46 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 64, -13, 8, -12, 11, -30, 64, -28 )
+points = Vector2Array( 21, 35, 64, 29, 70, 46, 30, 52, 10, 53 )
 
 [sub_resource type="ConvexPolygonShape2D" id=8]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 73, -43, 64, -13, 64, -28 )
+points = Vector2Array( 14, 35, 21, 35, 10, 53 )
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 70, -61, 73, -43, 64, -28, 64, -55, 66, -60 )
+points = Vector2Array( -20, 30, 14, 35, 10, 53, -25, 47, -31, 31 )
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 116, -61, 128, -60, 128, -46, 124, -44, 73, -43, 70, -61 )
+points = Vector2Array( -36, 36, -31, 31, -32, 46, -36, 41 )
 
-[node name="Block4-0" type="Node2D"]
+[node name="Block0-5" type="Node2D"]
 
 [node name="body" type="StaticBody2D" parent="."]
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, -4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 shapes/1/shape = SubResource( 2 )
-shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, -4 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 shapes/2/shape = SubResource( 3 )
-shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, -4 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 shapes/3/shape = SubResource( 4 )
-shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, -4 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/3/trigger = false
 shapes/4/shape = SubResource( 5 )
-shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, -4 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/4/trigger = false
 shapes/5/shape = SubResource( 6 )
-shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, -4 )
+shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/5/trigger = false
 shapes/6/shape = SubResource( 7 )
-shapes/6/transform = Matrix32( 1, 0, 0, 1, 0, -4 )
+shapes/6/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/6/trigger = false
 shapes/7/shape = SubResource( 8 )
-shapes/7/transform = Matrix32( 1, 0, 0, 1, 0, -4 )
+shapes/7/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/7/trigger = false
 shapes/8/shape = SubResource( 9 )
-shapes/8/transform = Matrix32( 1, 0, 0, 1, 0, -4 )
+shapes/8/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/8/trigger = false
 shapes/9/shape = SubResource( 10 )
-shapes/9/transform = Matrix32( 1, 0, 0, 1, 0, -4 )
+shapes/9/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/9/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -99,13 +99,12 @@ bounce = 0.0
 texture = ExtResource( 1 )
 vframes = 11
 hframes = 5
-frame = 4
+frame = 25
 
 [node name="polygon" type="CollisionPolygon2D" parent="body"]
 
-transform/pos = Vector2( 0, -4 )
 build_mode = 0
-polygon = Vector2Array( -128, 4, -108.774, 4, -80, 5, -62, 4, -51, 3, 0, 3, 0, -55, 2, -28, 11, -30, 64, -28, 64, -55, 66, -60, 70, -61, 116, -61, 128, -60, 128, -46, 124, -44, 73, -43, 64, -13, 8, -12, -1, 18, -15, 20, -123, 20, -128, 16 )
+polygon = Vector2Array( -128, 63, -115, 63, -85, 68, -68, 67, -32, 61, -32, 46, -36, 41, -36, 36, -31, 31, -20, 30, 14, 35, 21, 35, 64, 29, 64, 12, 60, 9, 60, 3, 66, -1, 128, -1, 128, 13, 71, 15, 70, 46, 30, 52, 10, 53, -25, 47, -25, 78, -67, 85, -95, 84, -128, 78 )
 shape_range = Vector2( 0, 9 )
 trigger = false
 

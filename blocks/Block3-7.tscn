@@ -5,7 +5,7 @@
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 65, 0, 128, 0, 128, 15, 64, 15, 38, 4 )
+points = Vector2Array( 66, -1, 128, -1, 128, 15, 64, 15, 38, 4 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 
@@ -64,7 +64,7 @@ frame = 38
 [node name="polygon" type="CollisionPolygon2D" parent="body"]
 
 build_mode = 0
-polygon = Vector2Array( -128, 63, -95, 62, -78, 55, -63, 54, 38, 4, 65, 0, 128, 0, 128, 15, 64, 15, 40, 21, -60, 71, -78, 71, -93, 79, -128, 79 )
+polygon = Vector2Array( -128, 63, -95, 62, -78, 55, -63, 54, 38, 4, 66, -1, 128, -1, 128, 15, 64, 15, 40, 21, -60, 71, -78, 71, -93, 79, -128, 79 )
 shape_range = Vector2( 0, 4 )
 trigger = false
 
