@@ -1,10 +1,8 @@
-[gd_scene load_steps=11 format=1]
+[gd_scene load_steps=9 format=1]
 
 [ext_resource path="res://textures/ghz_tiles.png" type="Texture" id=1]
-[ext_resource path="res://tilesets/TileSunflower.tres" type="TileSet" id=2]
-[ext_resource path="res://textures/palm_head.png" type="Texture" id=3]
-[ext_resource path="res://tilesets/TilePalm.tres" type="TileSet" id=4]
-[ext_resource path="res://textures/flower_body.png" type="Texture" id=5]
+[ext_resource path="res://textures/palm_head.png" type="Texture" id=2]
+[ext_resource path="res://tilesets/TilePalm.tres" type="TileSet" id=3]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -72,24 +70,6 @@ polygon = Vector2Array( -128, 4, -123, -1, -114, -1, -64, 5, -15, -1, 12, -1, 49
 shape_range = Vector2( 0, 4 )
 trigger = false
 
-[node name="sunflower" type="TileMap" parent="."]
-
-mode = 0
-tile_set = ExtResource( 2 )
-cell/size = Vector2( 32, 16 )
-cell/quadrant_size = 16
-cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-cell/half_offset = 2
-cell/tile_origin = 0
-cell/y_sort = false
-collision/use_kinematic = false
-collision/friction = 1.0
-collision/bounce = 0.0
-collision/layers = 1
-collision/mask = 1
-occluder/light_mask = 1
-tile_data = IntArray( -131072, 11, -65536, 8 )
-
 [node name="palm" type="Node2D" parent="."]
 
 editor/display_folded = true
@@ -98,13 +78,13 @@ z/z = 1
 [node name="head" type="Sprite" parent="palm"]
 
 transform/pos = Vector2( -48, -127 )
-texture = ExtResource( 3 )
+texture = ExtResource( 2 )
 centered = false
 
 [node name="body" type="TileMap" parent="palm"]
 
 mode = 0
-tile_set = ExtResource( 4 )
+tile_set = ExtResource( 3 )
 cell/size = Vector2( 16, 16 )
 cell/quadrant_size = 16
 cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -128,13 +108,13 @@ z/z = 1
 [node name="head" type="Sprite" parent="palm1"]
 
 transform/pos = Vector2( -48, -127 )
-texture = ExtResource( 3 )
+texture = ExtResource( 2 )
 centered = false
 
 [node name="body" type="TileMap" parent="palm1"]
 
 mode = 0
-tile_set = ExtResource( 4 )
+tile_set = ExtResource( 3 )
 cell/size = Vector2( 16, 16 )
 cell/quadrant_size = 16
 cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -148,24 +128,5 @@ collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
 tile_data = IntArray( -196609, 0, -131073, 0, -65537, 0, -1, 0, 65535, 2 )
-
-[node name="flower" type="Sprite" parent="."]
-
-transform/pos = Vector2( -80, -4 )
-texture = ExtResource( 5 )
-hframes = 3
-
-[node name="flower1" type="Sprite" parent="."]
-
-transform/pos = Vector2( -48, -4 )
-texture = ExtResource( 5 )
-hframes = 3
-frame = 1
-
-[node name="flower2" type="Sprite" parent="."]
-
-transform/pos = Vector2( 48, -4 )
-texture = ExtResource( 5 )
-hframes = 3
 
 
