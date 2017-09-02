@@ -49,4 +49,13 @@
 4/navigation_offset = Vector2( 8, 8 )
 4/shape_offset = Vector2( 0, 0 )
 4/shapes = [  ]
+5/name = "Sprite 6"
+5/texture = ExtResource( 1 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 80, 0, 16, 16 )
+5/occluder_offset = Vector2( 8, 8 )
+5/navigation_offset = Vector2( 8, 8 )
+5/shape_offset = Vector2( 0, 0 )
+5/shapes = [  ]
 

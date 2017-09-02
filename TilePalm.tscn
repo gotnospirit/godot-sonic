@@ -7,34 +7,41 @@
 [node name="Sprite" type="Sprite" parent="."]
 
 texture = ExtResource( 1 )
-hframes = 5
+hframes = 6
 
 [node name="Sprite 2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 16, 0 )
 texture = ExtResource( 1 )
-hframes = 5
+hframes = 6
 frame = 1
 
 [node name="Sprite 3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 32, 0 )
 texture = ExtResource( 1 )
-hframes = 5
+hframes = 6
 frame = 2
 
 [node name="Sprite 4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 48, 0 )
 texture = ExtResource( 1 )
-hframes = 5
+hframes = 6
 frame = 3
 
 [node name="Sprite 5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 64, 0 )
 texture = ExtResource( 1 )
-hframes = 5
+hframes = 6
 frame = 4
+
+[node name="Sprite 6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 80, 0 )
+texture = ExtResource( 1 )
+hframes = 6
+frame = 5
 
 
