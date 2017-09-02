@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=5 format=1]
 
 [ext_resource path="res://textures/ghz_tiles.png" type="Texture" id=1]
+[ext_resource path="res://tilesets/TileTotem.tres" type="TileSet" id=2]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -14,8 +15,9 @@ points = Vector2Array( 68, -1, 64, 4, 66, 0 )
 
 [node name="Block2-10" type="Node2D"]
 
-[node name="body" type="StaticBody2D" parent="."]
+[node name="ground" type="StaticBody2D" parent="."]
 
+z/z = 2
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -30,18 +32,37 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="body"]
+[node name="sprite" type="Sprite" parent="ground"]
 
 texture = ExtResource( 1 )
 vframes = 11
 hframes = 5
 frame = 52
 
-[node name="polygon" type="CollisionPolygon2D" parent="body"]
+[node name="polygon" type="CollisionPolygon2D" parent="ground"]
 
 build_mode = 0
 polygon = Vector2Array( 64, 4, 66, 0, 68, -1, 69, -2, 128, 0, 128, 14, 69, 15, 64, 10 )
 shape_range = Vector2( 0, 1 )
 trigger = false
+
+[node name="totem" type="TileMap" parent="."]
+
+z/z = 1
+mode = 2
+tile_set = ExtResource( 2 )
+cell/size = Vector2( 16, 16 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( -3211184, 0, -3211152, 1, -196602, 4, -131066, 3, -65530, 5 )
 
 
