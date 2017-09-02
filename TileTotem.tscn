@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://textures/totem.png" type="Texture" id=1]
+
+[node name="TileTotem" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 1 )
+vframes = 2
+hframes = 3
+
+[node name="Sprite1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 16, 0 )
+texture = ExtResource( 1 )
+vframes = 2
+hframes = 3
+frame = 1
+
+[node name="Sprite2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 32, 0 )
+texture = ExtResource( 1 )
+vframes = 2
+hframes = 3
+frame = 2
+
+[node name="Sprite3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 16 )
+texture = ExtResource( 1 )
+vframes = 2
+hframes = 3
+frame = 3
+
+[node name="Sprite4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 16, 16 )
+texture = ExtResource( 1 )
+vframes = 2
+hframes = 3
+frame = 4
+
+[node name="Sprite5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 32, 16 )
+texture = ExtResource( 1 )
+vframes = 2
+hframes = 3
+frame = 5
+
+
