@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=1]
+[gd_scene load_steps=46 format=1]
 
 [ext_resource path="res://Ridge.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Flower.tscn" type="PackedScene" id=2]
@@ -43,7 +43,8 @@
 [ext_resource path="res://blocks/Block1-10.tscn" type="PackedScene" id=41]
 [ext_resource path="res://Ring.tscn" type="PackedScene" id=42]
 [ext_resource path="res://Rock.tscn" type="PackedScene" id=43]
-[ext_resource path="res://Sonic.tscn" type="PackedScene" id=44]
+[ext_resource path="res://Checkpoint.tscn" type="PackedScene" id=44]
+[ext_resource path="res://Sonic.tscn" type="PackedScene" id=45]
 
 [node name="Game" type="Node2D"]
 
@@ -1379,8 +1380,20 @@ transform/pos = Vector2( 7886, 41 )
 
 transform/pos = Vector2( 8390, 154 )
 
-[node name="Sonic" parent="." instance=ExtResource( 44 )]
+[node name="Checkpoints" type="Node2D" parent="Green Hill Zone - Stg1"]
 
-transform/pos = Vector2( 2453, 34 )
+[node name="Checkpoint" parent="Green Hill Zone - Stg1/Checkpoints" instance=ExtResource( 44 )]
+
+transform/pos = Vector2( 4574, -174 )
+
+[node name="Checkpoint1" parent="Green Hill Zone - Stg1/Checkpoints" instance=ExtResource( 44 )]
+
+transform/pos = Vector2( 6518, 153 )
+
+[node name="Sonic" parent="." groups=[
+"hero",
+] instance=ExtResource( 45 )]
+
+transform/pos = Vector2( 4555, -172 )
 
 
