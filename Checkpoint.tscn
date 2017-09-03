@@ -25,7 +25,7 @@ points = Vector2Array( -3, -32, 3, -32, 5, -31, 7, -29, 8, -27, 8, -21, 7, -19, 
 
 [sub_resource type="Animation" id=1]
 
-resource/name = "hit"
+resource/name = "spin"
 length = 3.2
 loop = false
 step = 0.1
@@ -48,13 +48,14 @@ tracks/1/keys = {
 "transitions": FloatArray( 1 ),
 "values": [ {
 "args": [  ],
-"method": "set_active"
+"method": "on_spin_end"
 } ]
 }
 
 [node name="Checkpoint" type="Node2D"]
 
 script/script = ExtResource( 1 )
+final_frame = 1
 
 [node name="body" type="Area2D" parent="."]
 
@@ -94,7 +95,7 @@ trigger = true
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/hit = SubResource( 1 )
+anims/spin = SubResource( 1 )
 playback/active = true
 playback/speed = 6.0
 blend_times = [  ]

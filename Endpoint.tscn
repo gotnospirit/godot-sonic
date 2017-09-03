@@ -1,0 +1,88 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://scripts/checkpoint.gd" type="Script" id=1]
+[ext_resource path="res://textures/endpoint.png" type="Texture" id=2]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -2, 7, -3, -24, 3, -24, 3, 24 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -2, 24, -2, 7, 3, 24, 2, 25, -1, 25 )
+
+[sub_resource type="Animation" id=3]
+
+resource/name = "spin"
+length = 5.3
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("body/sprite:frame")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5, 5.1, 5.2 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4 ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 5.3 ),
+"transitions": FloatArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "on_spin_end"
+} ]
+}
+
+[node name="Endpoint" type="Node2D"]
+
+script/script = ExtResource( 1 )
+final_frame = 4
+
+[node name="body" type="Area2D" parent="."]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 2 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="sprite" type="Sprite" parent="body"]
+
+texture = ExtResource( 2 )
+hframes = 5
+frame = 4
+
+[node name="polygon" type="CollisionPolygon2D" parent="body"]
+
+build_mode = 0
+polygon = Vector2Array( -3, -24, 3, -24, 3, 24, 2, 25, -1, 25, -2, 24, -2, 7 )
+shape_range = Vector2( 0, 1 )
+trigger = false
+
+[node name="animation" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/spin = SubResource( 3 )
+playback/active = true
+playback/speed = 2.7
+blend_times = [  ]
+autoplay = ""
+
+
