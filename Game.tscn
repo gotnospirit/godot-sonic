@@ -727,13 +727,12 @@ transform/pos = Vector2( 9590, 434 )
 
 [node name="Rings" type="Node2D" parent="Green Hill Zone - Stg1"]
 
-editor/display_folded = true
 transform/pos = Vector2( 0, 1 )
 z/z = 1
 
 [node name="Ring" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 313, 147 )
+transform/pos = Vector2( 313, 146 )
 
 [node name="Ring1" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
@@ -741,7 +740,7 @@ transform/pos = Vector2( 338, 147 )
 
 [node name="Ring2" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 363, 147 )
+transform/pos = Vector2( 363, 146 )
 
 [node name="Ring3" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
@@ -749,23 +748,23 @@ transform/pos = Vector2( 809, -46 )
 
 [node name="Ring4" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 809, -71 )
+transform/pos = Vector2( 809, -67 )
 
 [node name="Ring5" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 809, -96 )
+transform/pos = Vector2( 809, -91 )
 
 [node name="Ring6" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 809, -121 )
+transform/pos = Vector2( 809, -115 )
 
 [node name="Ring7" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 809, -146 )
+transform/pos = Vector2( 809, -139 )
 
 [node name="Ring8" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 809, -171 )
+transform/pos = Vector2( 809, -163 )
 
 [node name="Ring9" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
@@ -773,31 +772,31 @@ transform/pos = Vector2( 1115, 90 )
 
 [node name="Ring10" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 1140, 90 )
+transform/pos = Vector2( 1146, 82 )
 
 [node name="Ring11" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 1165, 90 )
+transform/pos = Vector2( 1170, 82 )
 
 [node name="Ring12" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 1190, 90 )
+transform/pos = Vector2( 1194, 82 )
 
 [node name="Ring13" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 1215, 90 )
+transform/pos = Vector2( 1218, 82 )
 
 [node name="Ring14" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 1665, 179 )
+transform/pos = Vector2( 1654, 184 )
 
 [node name="Ring15" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 1693, 194 )
+transform/pos = Vector2( 1686, 200 )
 
 [node name="Ring16" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 1722, 209 )
+transform/pos = Vector2( 1718, 214 )
 
 [node name="Ring17" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
@@ -805,139 +804,139 @@ transform/pos = Vector2( 1751, 219 )
 
 [node name="Ring18" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 1783, 223 )
+transform/pos = Vector2( 1793, 228 )
 
 [node name="Ring19" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 1835, 221 )
+transform/pos = Vector2( 1837, 224 )
 
 [node name="Ring20" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 1870, 186 )
+transform/pos = Vector2( 1873, 195 )
 
 [node name="Ring21" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 2490, 18 )
+transform/pos = Vector2( 2490, -15 )
 
 [node name="Ring22" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 2515, 18 )
+transform/pos = Vector2( 2514, -15 )
 
 [node name="Ring23" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 2966, 18 )
+transform/pos = Vector2( 2954, 1 )
 
 [node name="Ring24" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 2991, 18 )
+transform/pos = Vector2( 2978, 1 )
 
 [node name="Ring25" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 3403, -38 )
+transform/pos = Vector2( 3398, -25 )
 
 [node name="Ring26" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 3436, -52 )
+transform/pos = Vector2( 3430, -38 )
 
 [node name="Ring27" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 3469, -68 )
+transform/pos = Vector2( 3464, -56 )
 
 [node name="Ring28" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 3501, -83 )
+transform/pos = Vector2( 3499, -72 )
 
 [node name="Ring29" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 3535, -97 )
+transform/pos = Vector2( 3536, -88 )
 
 [node name="Ring30" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 3751, -200 )
+transform/pos = Vector2( 3751, -189 )
 
 [node name="Ring31" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 3783, -209 )
+transform/pos = Vector2( 3784, -197 )
 
 [node name="Ring32" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 3816, -217 )
+transform/pos = Vector2( 3819, -204 )
 
 [node name="Ring33" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 3852, -213 )
+transform/pos = Vector2( 3856, -202 )
 
 [node name="Ring34" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 3888, -208 )
+transform/pos = Vector2( 3893, -198 )
 
 [node name="Ring35" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 3926, -210 )
+transform/pos = Vector2( 3932, -199 )
 
 [node name="Ring36" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 3966, 10 )
+transform/pos = Vector2( 3966, 9 )
 
 [node name="Ring37" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 3990, 10 )
+transform/pos = Vector2( 3990, 9 )
 
 [node name="Ring38" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 4014, 10 )
+transform/pos = Vector2( 4014, 9 )
 
 [node name="Ring39" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 4434, 88 )
+transform/pos = Vector2( 4430, 93 )
 
 [node name="Ring40" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 4458, 88 )
+transform/pos = Vector2( 4454, 93 )
 
 [node name="Ring41" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 4482, 88 )
+transform/pos = Vector2( 4478, 93 )
 
 [node name="Ring42" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 4627, 88 )
+transform/pos = Vector2( 4630, 93 )
 
 [node name="Ring43" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 4651, 88 )
+transform/pos = Vector2( 4654, 93 )
 
 [node name="Ring44" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 4675, 88 )
+transform/pos = Vector2( 4678, 93 )
 
 [node name="Ring45" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 4696, -149 )
+transform/pos = Vector2( 4690, -145 )
 
 [node name="Ring46" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 4727, -138 )
+transform/pos = Vector2( 4726, -134 )
 
 [node name="Ring47" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 4758, -123 )
+transform/pos = Vector2( 4760, -118 )
 
 [node name="Ring48" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 4790, -110 )
+transform/pos = Vector2( 4793, -102 )
 
 [node name="Ring49" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 4827, -100 )
+transform/pos = Vector2( 4832, -94 )
 
 [node name="Ring50" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 5563, -109 )
+transform/pos = Vector2( 5561, -111 )
 
 [node name="Ring51" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 5547, -155 )
+transform/pos = Vector2( 5541, -159 )
 
 [node name="Ring52" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
@@ -945,23 +944,23 @@ transform/pos = Vector2( 5495, -180 )
 
 [node name="Ring53" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 5441, -155 )
+transform/pos = Vector2( 5444, -119 )
 
 [node name="Ring54" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 5425, -109 )
+transform/pos = Vector2( 5426, -111 )
 
 [node name="Ring55" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 5850, -289 )
+transform/pos = Vector2( 5850, -282 )
 
 [node name="Ring56" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 5892, -289 )
+transform/pos = Vector2( 5890, -282 )
 
 [node name="Ring57" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 5932, -297 )
+transform/pos = Vector2( 5930, -292 )
 
 [node name="Ring58" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
@@ -969,371 +968,378 @@ transform/pos = Vector2( 5965, -311 )
 
 [node name="Ring59" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6000, -328 )
+transform/pos = Vector2( 6010, -326 )
 
 [node name="Ring60" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6106, -351 )
+transform/pos = Vector2( 6102, -347 )
 
 [node name="Ring61" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6153, -351 )
+transform/pos = Vector2( 6146, -347 )
 
 [node name="Ring62" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6195, -347 )
+transform/pos = Vector2( 6194, -345 )
 
 [node name="Ring63" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6235, -343 )
+transform/pos = Vector2( 6242, -343 )
 
 [node name="Ring64" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6275, -343 )
+transform/pos = Vector2( 6290, -341 )
 
 [node name="Ring65" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6323, -347 )
+transform/pos = Vector2( 6338, -347 )
 
 [node name="Ring66" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6366, -349 )
+transform/pos = Vector2( 6386, -347 )
 
 [node name="Ring67" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6417, -348 )
+transform/pos = Vector2( 6434, -346 )
 
 [node name="Ring68" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6474, -342 )
+transform/pos = Vector2( 6482, -341 )
 
 [node name="Ring69" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6521, -341 )
+transform/pos = Vector2( 6530, -340 )
 
 [node name="Ring70" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6571, -346 )
+transform/pos = Vector2( 6578, -345 )
 
 [node name="Ring71" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6623, -348 )
+transform/pos = Vector2( 6626, -347 )
 
 [node name="Ring72" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6478, 163 )
+transform/pos = Vector2( 6470, 161 )
 
 [node name="Ring73" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6503, 163 )
+transform/pos = Vector2( 6494, 161 )
 
 [node name="Ring74" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6528, 163 )
+transform/pos = Vector2( 6518, 161 )
 
 [node name="Ring75" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6553, 163 )
+transform/pos = Vector2( 6542, 161 )
 
 [node name="Ring76" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6578, 163 )
+transform/pos = Vector2( 6566, 161 )
 
 [node name="Ring77" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6212, -612 )
+transform/pos = Vector2( 6166, -603 )
 
 [node name="Ring78" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6235, -612 )
+transform/pos = Vector2( 6190, -603 )
 
 [node name="Ring79" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6258, -612 )
+transform/pos = Vector2( 6214, -603 )
 
 [node name="Ring80" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6281, -612 )
+transform/pos = Vector2( 6238, -603 )
 
 [node name="Ring81" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6304, -612 )
+transform/pos = Vector2( 6262, -603 )
+z/z = -1
 
 [node name="Ring82" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6327, -612 )
+transform/pos = Vector2( 6286, -603 )
 
 [node name="Ring83" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6350, -612 )
+transform/pos = Vector2( 6310, -603 )
 
 [node name="Ring84" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6373, -612 )
+transform/pos = Vector2( 6334, -603 )
 
 [node name="Ring85" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6396, -612 )
+transform/pos = Vector2( 6358, -603 )
 
 [node name="Ring86" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6419, -612 )
+transform/pos = Vector2( 6382, -603 )
 
 [node name="Ring87" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6442, -612 )
+transform/pos = Vector2( 6406, -603 )
 
 [node name="Ring88" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6465, -612 )
+transform/pos = Vector2( 6430, -603 )
 
 [node name="Ring89" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6488, -612 )
+transform/pos = Vector2( 6454, -603 )
 
 [node name="Ring90" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6511, -612 )
+transform/pos = Vector2( 6478, -603 )
 
 [node name="Ring91" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6534, -612 )
+transform/pos = Vector2( 6502, -603 )
 
 [node name="Ring92" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6557, -612 )
+transform/pos = Vector2( 6526, -603 )
+z/z = -1
 
 [node name="Ring93" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 6580, -612 )
+transform/pos = Vector2( 6550, -603 )
 
 [node name="Ring94" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7515, -79 )
+transform/pos = Vector2( 7502, -103 )
 
 [node name="Ring95" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7540, -79 )
+transform/pos = Vector2( 7526, -103 )
 
 [node name="Ring96" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7565, -79 )
+transform/pos = Vector2( 7550, -103 )
 
 [node name="Ring97" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7590, -79 )
+transform/pos = Vector2( 7574, -103 )
 
 [node name="Ring98" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7615, -79 )
+transform/pos = Vector2( 7598, -103 )
 
 [node name="Ring99" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7640, -79 )
+transform/pos = Vector2( 7622, -103 )
 
 [node name="Ring100" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7665, -79 )
+transform/pos = Vector2( 7646, -103 )
 
 [node name="Ring101" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7690, -79 )
+transform/pos = Vector2( 7670, -103 )
 
 [node name="Ring102" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7527, -104 )
+transform/pos = Vector2( 7514, -119 )
 
 [node name="Ring103" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7552, -104 )
+transform/pos = Vector2( 7538, -119 )
 
 [node name="Ring104" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7577, -104 )
+transform/pos = Vector2( 7562, -119 )
 
 [node name="Ring105" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7602, -104 )
+transform/pos = Vector2( 7586, -119 )
 
 [node name="Ring106" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7627, -104 )
+transform/pos = Vector2( 7610, -119 )
 
 [node name="Ring107" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7652, -104 )
+transform/pos = Vector2( 7634, -119 )
 
 [node name="Ring108" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7677, -104 )
+transform/pos = Vector2( 7658, -119 )
 
 [node name="Ring109" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7540, -128 )
+transform/pos = Vector2( 7526, -135 )
 
 [node name="Ring110" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7565, -128 )
+transform/pos = Vector2( 7550, -135 )
 
 [node name="Ring111" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7590, -128 )
+transform/pos = Vector2( 7574, -135 )
 
 [node name="Ring112" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7615, -128 )
+transform/pos = Vector2( 7598, -135 )
 
 [node name="Ring113" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7640, -128 )
+transform/pos = Vector2( 7622, -135 )
 
 [node name="Ring114" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7665, -128 )
+transform/pos = Vector2( 7646, -135 )
 
 [node name="Ring115" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7552, -151 )
+transform/pos = Vector2( 7538, -151 )
 
 [node name="Ring116" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7577, -151 )
+transform/pos = Vector2( 7562, -151 )
 
 [node name="Ring117" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7602, -151 )
+transform/pos = Vector2( 7586, -151 )
 
 [node name="Ring118" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7627, -151 )
+transform/pos = Vector2( 7610, -151 )
 
 [node name="Ring119" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7652, -151 )
+transform/pos = Vector2( 7634, -151 )
 
 [node name="Ring120" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7565, -175 )
+transform/pos = Vector2( 7550, -167 )
 
 [node name="Ring121" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7590, -175 )
+transform/pos = Vector2( 7574, -167 )
 
 [node name="Ring122" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7615, -175 )
+transform/pos = Vector2( 7598, -167 )
 
 [node name="Ring123" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 7640, -175 )
+transform/pos = Vector2( 7622, -167 )
 
 [node name="Ring124" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 8032, -23 )
+transform/pos = Vector2( 8038, -28 )
 
 [node name="Ring125" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 8057, -23 )
+transform/pos = Vector2( 8062, -28 )
 
 [node name="Ring126" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 8082, -23 )
+transform/pos = Vector2( 8086, -28 )
 
 [node name="Ring127" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 8107, -23 )
+transform/pos = Vector2( 8110, -28 )
 
 [node name="Ring128" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 8132, -23 )
+transform/pos = Vector2( 8134, -28 )
 
 [node name="Ring129" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 8015, 428 )
+transform/pos = Vector2( 8026, 434 )
 
 [node name="Ring130" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 8040, 428 )
+transform/pos = Vector2( 8050, 434 )
 
 [node name="Ring131" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 8065, 428 )
+transform/pos = Vector2( 8074, 434 )
 
 [node name="Ring132" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 8090, 428 )
+transform/pos = Vector2( 8098, 434 )
 
 [node name="Ring133" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 8115, 428 )
+transform/pos = Vector2( 8122, 434 )
 
 [node name="Ring134" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 8140, 428 )
+transform/pos = Vector2( 8146, 434 )
 
 [node name="Ring135" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 8492, 162 )
+transform/pos = Vector2( 8526, 174 )
 
 [node name="Ring136" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 8522, 169 )
+transform/pos = Vector2( 8491, 165 )
 
 [node name="Ring137" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 8553, 177 )
+transform/pos = Vector2( 8560, 185 )
 
 [node name="Ring138" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 8584, 191 )
+transform/pos = Vector2( 8594, 200 )
 
 [node name="Ring139" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 8612, 206 )
+transform/pos = Vector2( 8628, 217 )
+z/z = -1
 
 [node name="Ring140" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 9015, 419 )
+transform/pos = Vector2( 8664, 226 )
 
 [node name="Ring141" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 9052, 427 )
+transform/pos = Vector2( 9016, 422 )
 
 [node name="Ring142" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 9085, 443 )
+transform/pos = Vector2( 9053, 431 )
 
 [node name="Ring143" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 9114, 456 )
+transform/pos = Vector2( 9084, 446 )
 
 [node name="Ring144" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 9150, 474 )
+transform/pos = Vector2( 9115, 462 )
 
 [node name="Ring145" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 9185, 482 )
+transform/pos = Vector2( 9148, 479 )
 
 [node name="Ring146" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 9220, 482 )
+transform/pos = Vector2( 9186, 487 )
 
 [node name="Ring147" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 9254, 485 )
+transform/pos = Vector2( 9226, 487 )
 
 [node name="Ring148" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 9293, 485 )
+transform/pos = Vector2( 9264, 487 )
+z/z = -1
 
 [node name="Ring149" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
 
-transform/pos = Vector2( 9334, 481 )
+transform/pos = Vector2( 9303, 487 )
+
+[node name="Ring150" parent="Green Hill Zone - Stg1/Rings" instance=ExtResource( 42 )]
+
+transform/pos = Vector2( 9340, 486 )
+z/z = -1
 
 [node name="Rocks" type="Node2D" parent="Green Hill Zone - Stg1"]
-
-editor/display_folded = true
 
 [node name="Rock" parent="Green Hill Zone - Stg1/Rocks" instance=ExtResource( 43 )]
 
@@ -1400,6 +1406,8 @@ transform/pos = Vector2( 3494, 165 )
 transform/pos = Vector2( 3958, 233 )
 
 [node name="Monitors" type="Node2D" parent="Green Hill Zone - Stg1"]
+
+editor/display_folded = true
 
 [node name="Monitor" parent="Green Hill Zone - Stg1/Monitors" instance=ExtResource( 47 )]
 
