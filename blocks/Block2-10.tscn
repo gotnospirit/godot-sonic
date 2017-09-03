@@ -48,7 +48,7 @@ trigger = false
 [node name="totem" type="TileMap" parent="."]
 
 z/z = 1
-mode = 0
+mode = 2
 tile_set = ExtResource( 2 )
 cell/size = Vector2( 16, 16 )
 cell/quadrant_size = 16
@@ -62,6 +62,6 @@ collision/bounce = 0.0
 collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
-tile_data = IntArray( -3211184, 0, -3211152, 1, -196602, 4, -131066, 3, -65530, 5 )
+tile_data = IntArray( -3211184, 0, -3211152, 1, -3145632, 4, -2097056, 3, -1048480, 5 )
 
 
