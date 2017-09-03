@@ -130,7 +130,7 @@ func _fixed_process(delta):
 	if walking:
 		new_animation = 'walking'
 
-		if velocity.x > 0:
+		if walk_right:
 			get_node('sonicSprite').set_flip_h(false)
 		else:
 			get_node('sonicSprite').set_flip_h(true)
