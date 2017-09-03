@@ -28,8 +28,17 @@ var jumping = false
 
 var prev_jump_pressed = false
 
-var animation = ''
+onready var animation = get_node('animation')
+onready var sprite = get_node('sprite')
+onready var raycast = get_node('sonicRaycast')
+onready var raycast1 = get_node('sonicRaycast1')
+onready var raycast2 = get_node('sonicRaycast2')
+
+var current_animation = ''
 var new_animation = ''
+
+func is_on_floor():
+	return raycast.is_colliding() || raycast1.is_colliding() || raycast2.is_colliding()
 
 func _fixed_process(delta):
 	# Create forces
@@ -51,7 +60,7 @@ func _fixed_process(delta):
 		if (velocity.x >= -WALK_MIN_SPEED and velocity.x < WALK_MAX_SPEED):
 			force.x += WALK_FORCE
 			stop = false
-	
+
 	if (stop):
 		new_animation = 'stopped'
 	
@@ -124,16 +133,16 @@ func _fixed_process(delta):
 	on_air_time += delta
 	prev_jump_pressed = jump
 
-	var on_floor = get_node("sonicRaycast").is_colliding() || get_node("sonicRaycast1").is_colliding() || get_node("sonicRaycast2").is_colliding()
+	var on_floor = is_on_floor()
 	var walking = on_floor && (walk_left || walk_right)
 
 	if walking:
 		new_animation = 'walking'
 
 		if walk_right:
-			get_node('sonicSprite').set_flip_h(false)
+			sprite.set_flip_h(false)
 		else:
-			get_node('sonicSprite').set_flip_h(true)
+			sprite.set_flip_h(true)
 	elif up && on_floor:
 		new_animation = 'up'
 	elif down && on_floor:
@@ -148,9 +157,12 @@ func _fixed_process(delta):
 	if jump && !on_floor:
 		new_animation = 'rolling'
 
-	if animation != new_animation:
-		animation = new_animation
-		get_node('sonicAnimation').play(new_animation)
+	if current_animation != new_animation:
+		current_animation = new_animation
+		animation.play(new_animation)
 
 func _ready():
 	set_fixed_process(true)
+
+func bump():
+	print('bump it')
